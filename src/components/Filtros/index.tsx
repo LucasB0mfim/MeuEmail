@@ -1,11 +1,11 @@
 import * as S from './styles'
 
 export type Props = {
-  ativo?: boolean
+  ativo?: string
 }
 
 const Filtro = (props: Props) => {
-  return <S.Categorias ativo={props.ativo}>Favoritos</S.Categorias>
+  return <S.Categorias ativo={props.ativo}>Com estrela</S.Categorias>
 }
 
 export default Filtro
