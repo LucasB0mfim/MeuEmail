@@ -4,14 +4,14 @@ import * as S from './styles'
 const BarraLateral = () => (
   <S.Aside>
     <div>
-      <S.Botao type="submit">Escrever</S.Botao>
-      <div>
+      <S.Botao type="submit">C</S.Botao>
+      <S.Filtros>
         <Filtro />
         <Filtro />
         <Filtro />
         <Filtro />
         <Filtro ativo="true" />
-      </div>
+      </S.Filtros>
     </div>
   </S.Aside>
 )

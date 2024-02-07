@@ -2,13 +2,16 @@ import styled from 'styled-components'
 import { Props } from '.'
 
 export const Categorias = styled.button<Props>`
+  display: block;
+  width: 30px;
   padding: 5px;
   border: none;
-  border-radius: 25px;
+  border-radius: 50%;
+  color: ${(props) => (props.ativo ? 'blue' : '#5e5e5e')};
   background-color: ${(props) => (props.ativo ? '#fcfcfc' : '')};
-  color: ${(props) => (props.ativo ? 'green' : '#5e5e5e')};
-  margin-left: -10px;
-  display: block;
-  width: 100%;
   cursor: pointer;
+
+  &:hover {
+    background-color: red;
+  }
 `

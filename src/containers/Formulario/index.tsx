@@ -1,8 +1,12 @@
+import * as S from './styles'
+
 const Formulario = () => {
   return (
-    <main>
-      <h1>Caixa de emails:</h1>
-    </main>
+    <S.Main>
+      <S.Container>
+        <h1>Caixa de emails:</h1>
+      </S.Container>
+    </S.Main>
   )
 }
 

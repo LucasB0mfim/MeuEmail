@@ -5,7 +5,7 @@ export type Props = {
 }
 
 const Filtro = (props: Props) => {
-  return <S.Categorias ativo={props.ativo}>Com estrela</S.Categorias>
+  return <S.Categorias ativo={props.ativo}>E</S.Categorias>
 }
 
 export default Filtro
