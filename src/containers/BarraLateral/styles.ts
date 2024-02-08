@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Aside = styled.aside`
-  background-color: #eee;
   height: 100vh;
   width: 6%;
   display: flex;
@@ -17,7 +16,7 @@ export const Filtros = styled.div`
 
 export const Botao = styled.button`
   padding: 20px;
-  margin-top: 24px;
+  margin-top: 40px;
   width: 56px;
   height: 56px;
   border-radius: 20px;

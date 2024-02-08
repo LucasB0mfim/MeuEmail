@@ -6,7 +6,7 @@ export type Props = {
 
 export const Main = styled.main`
   width: 100%;
-  background-color: red;
+
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import natu from '../images/natu.jpg'
 
 const StyleGlobal = createGlobalStyle`
   * {
@@ -13,6 +14,7 @@ const StyleGlobal = createGlobalStyle`
 
 export const Container = styled.div`
   display: flex;
+  background-image: url(${natu});
 `
 
 export default StyleGlobal
