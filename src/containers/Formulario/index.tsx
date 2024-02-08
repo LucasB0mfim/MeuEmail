@@ -1,10 +1,40 @@
+import { useState } from 'react'
 import * as S from './styles'
 
 const Formulario = () => {
+  const [ativo, setAtivo] = useState('Principal')
+
+  const selecionar = (categoria: string) => {
+    setAtivo(categoria)
+  }
+
   return (
     <S.Main>
       <S.Container>
-        <h1>Caixa de emails:</h1>
+        <div>
+          <S.Categoria
+            href="#"
+            ativo={ativo === 'Principal'}
+            onClick={() => selecionar('Principal')}
+          >
+            Principal
+          </S.Categoria>
+          <S.Categoria
+            href="#"
+            ativo={ativo === 'Promoções'}
+            onClick={() => selecionar('Promoções')}
+          >
+            Promoções
+          </S.Categoria>
+          <S.Categoria
+            href="#"
+            ativo={ativo === 'Social'}
+            onClick={() => selecionar('Social')}
+          >
+            Social
+          </S.Categoria>
+          <S.Linha></S.Linha>
+        </div>
       </S.Container>
     </S.Main>
   )

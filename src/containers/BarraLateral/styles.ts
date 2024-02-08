@@ -10,8 +10,9 @@ export const Aside = styled.aside`
 
 export const Filtros = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-top: 8px;
+  flex-direction: column;
 `
 
 export const Botao = styled.button`
