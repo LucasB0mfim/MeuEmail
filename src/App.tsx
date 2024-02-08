@@ -1,14 +1,17 @@
 import BarraLateral from './containers/BarraLateral'
 import Formulario from './containers/Formulario'
 import StyleGlobal, { Container } from './styles'
+import { StyleSheetManager } from 'styled-components'
 
 function App() {
   return (
     <>
       <StyleGlobal />
       <Container>
-        <BarraLateral />
-        <Formulario />
+        <StyleSheetManager shouldForwardProp={() => true}>
+          <BarraLateral />
+          <Formulario />
+        </StyleSheetManager>
       </Container>
     </>
   )

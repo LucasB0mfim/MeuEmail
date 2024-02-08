@@ -14,21 +14,21 @@ const Formulario = () => {
         <div>
           <S.Categoria
             href="#"
-            ativo={ativo === 'Principal'}
+            ativo={ativo === 'Principal' ? 'true' : undefined}
             onClick={() => selecionar('Principal')}
           >
             Principal
           </S.Categoria>
           <S.Categoria
             href="#"
-            ativo={ativo === 'Promoções'}
+            ativo={ativo === 'Promoções' ? 'true' : undefined}
             onClick={() => selecionar('Promoções')}
           >
             Promoções
           </S.Categoria>
           <S.Categoria
             href="#"
-            ativo={ativo === 'Social'}
+            ativo={ativo === 'Social' ? 'true' : undefined}
             onClick={() => selecionar('Social')}
           >
             Social

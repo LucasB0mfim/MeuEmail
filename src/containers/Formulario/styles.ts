@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export type Props = {
-  ativo?: boolean
+  ativo?: string
 }
 
 export const Main = styled.main`
