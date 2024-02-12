@@ -9,6 +9,7 @@ const StyleGlobal = createGlobalStyle`
     list-style: none;
     font-size: 14px;
     text-decoration: none;
+    font-family: sans-serif;
   }
 `
 

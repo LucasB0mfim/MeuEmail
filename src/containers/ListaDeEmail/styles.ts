@@ -12,6 +12,7 @@ export const Main = styled.div`
   height: 90vh;
   border-radius: 25px;
   background-color: #fff;
+  overflow-y: hidden;
 `
 
 export const Lista = styled.div`
@@ -19,9 +20,6 @@ export const Lista = styled.div`
 `
 export const Categoria = styled.div`
   display: flex;
-  padding: 20px;
 `
 
-export const Ul = styled.ul`
-  margin-top: 20px;
-`
+export const Ul = styled.ul``
