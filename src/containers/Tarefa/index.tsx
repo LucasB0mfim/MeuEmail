@@ -1,9 +1,16 @@
+//Nesse arquivo vai ficar a construção de cada Email
+
 import * as S from './styles'
 
-const Tarefa = () => (
+type Props = {
+  titulo: string
+  descricao: string
+}
+
+const Tarefa = ({ titulo, descricao }: Props) => (
   <S.Card>
-    <S.Titulo>Nome do Email</S.Titulo>
-    <S.Descricao>bla bla bla</S.Descricao>
+    <S.Titulo>{titulo}</S.Titulo>
+    <S.Descricao>{descricao}</S.Descricao>
   </S.Card>
 )
 
