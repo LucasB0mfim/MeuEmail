@@ -7,7 +7,6 @@ const StyleGlobal = createGlobalStyle`
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 14px;
     text-decoration: none;
     font-family: sans-serif;
   }
@@ -15,8 +14,10 @@ const StyleGlobal = createGlobalStyle`
 
 export const Container = styled.div`
   display: flex;
-  background-image: url(${wallpaper});
+  height: 100vh;
+  align-items: center;
   background-size: cover;
+  background-image: url(${wallpaper});
 `
 
 export default StyleGlobal

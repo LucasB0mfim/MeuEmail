@@ -1,22 +1,17 @@
 import styled from 'styled-components'
 
-export const Aside = styled.aside`
-  height: 100vh;
-  width: 6%;
+export const BarraLateral = styled.aside`
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  height: 90vh;
+  width: 5%;
 `
 
-export const Botao = styled.button`
-  padding: 20px;
-  margin-top: 40px;
-  width: 56px;
-  height: 56px;
-  border-radius: 20px;
-  border: none;
-  font-weight: 600;
-  font-size: 14px;
-  color: #5f6368;
-  background-color: #fff;
+export const BotaoEscrever = styled.button`
+  width: 50px;
+  height: 50px;
   cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
 `
