@@ -7,13 +7,6 @@ export const Aside = styled.aside`
   justify-content: center;
 `
 
-export const Filtros = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
-  flex-direction: column;
-`
-
 export const Botao = styled.button`
   padding: 20px;
   margin-top: 40px;

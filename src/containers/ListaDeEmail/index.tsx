@@ -1,28 +1,51 @@
+//ESSE ARQUIVO É TODO O MAIN DO PROJETO
+
 import { useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
-import FiltroCard from '../../components/FiltroCard'
-import Email from '../Email'
+import Secao from '../../components/Secao'
+import Email from '../../components/Email'
 import * as S from './styles'
+import * as emuns from '../../utils/enums/Email'
 
 const ListaDeEmail = () => {
-  const { emails } = useSelector((state: RootReducer) => state)
+  const { itens } = useSelector((state: RootReducer) => state.emails)
 
   return (
     <S.Container>
       <S.Main>
+        {/**/}
+        {/**/}
         <S.Categoria>
-          <FiltroCard legenda="Principal" ativo />
-          <FiltroCard legenda="Promoções" />
-          <FiltroCard legenda="Social" />
+          <Secao
+            valor={emuns.Secao.PRINCIPAL}
+            criterio="Principal"
+            secao="Principal"
+            ativo
+          />
+          <Secao
+            valor={emuns.Secao.PROMOCAO}
+            criterio="Promoção"
+            secao="Promoção"
+          />
+          <Secao valor={emuns.Secao.SOCIAL} criterio="Social" secao="Social" />
         </S.Categoria>
+        {/**/}
+        {/**/}
+        {/* modelo do email  */}
         <S.Ul>
-          {emails.map((email) => (
-            //usei a key para não repetir o titulo
+          {itens.map((email) => (
             <li key={email.titulo}>
-              <Email titulo={email.titulo} descricao={email.descricao} />
+              <Email
+                titulo={email.titulo}
+                descricao={email.descricao}
+                id={email.id}
+                secao={email.secao}
+              />
             </li>
           ))}
         </S.Ul>
+        {/**/}
+        {/**/}
       </S.Main>
     </S.Container>
   )

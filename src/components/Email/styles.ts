@@ -1,10 +1,20 @@
 import styled from 'styled-components'
-import { Props } from '.'
+
+export const Remover = styled.button`
+  display: flex;
+  position: fixed;
+  right: 2%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  visibility: hidden;
+`
 
 export const Card = styled.div`
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  justify-content: left;
+  padding: 0 20px;
   height: 40px;
   border: 1px solid #ccc;
   border-left: none;
@@ -13,11 +23,14 @@ export const Card = styled.div`
   &:hover {
     background-color: #ccc;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+
+    ${Remover} {
+      visibility: visible;
+    }
   }
 `
 
 export const Titulo = styled.h3`
-  margin-right: 30px;
   width: 220px;
 `
 

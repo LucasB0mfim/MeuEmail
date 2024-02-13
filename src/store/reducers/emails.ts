@@ -1,43 +1,37 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import Email from '../../models/Email'
+import * as enums from '../../utils/enums/Email'
+
+type EmailsState = {
+  itens: Email[]
+}
+
+const emailInicial: EmailsState = {
+  itens: [
+    {
+      id: 1,
+      titulo: 'Estudar JavaScript',
+      descricao:
+        'Seja para descansar ou cair na folia, desejamos que aproveite muito o seu Carnaval! Nós já estamos aqui preparando um pós Carnaval com ...',
+      secao: enums.Secao.PRINCIPAL
+    },
+    {
+      id: 2,
+      titulo: 'Estudar TypeScript',
+      descricao:
+        'Seja para descansar ou cair na folia, desejamos que aproveite muito o seu Carnaval! Nós já estamos aqui preparando um pós Carnaval com ...',
+      secao: enums.Secao.PROMOCAO
+    }
+  ]
+}
 
 const emailsSlice = createSlice({
   name: 'emails',
-  initialState: [
-    new Email(
-      'Estudar JavaScript',
-      'Seja para descansar ou cair na folia, desejamos que aproveite muito o seu Carnaval! Nós já estamos aqui preparando um pós Carnaval com ...',
-      1
-    ),
-    new Email(
-      'Estudar JavaScript',
-      'Seja para descansar ou cair na folia, desejamos que aproveite muito o seu Carnaval! Nós já estamos aqui preparando um pós Carnaval com ...',
-      2
-    ),
-    new Email(
-      'Estudar JavaScript',
-      'Seja para descansar ou cair na folia, desejamos que aproveite muito o seu Carnaval! Nós já estamos aqui preparando um pós Carnaval com ...',
-      3
-    ),
-    new Email(
-      'Estudar JavaScript',
-      'Seja para descansar ou cair na folia, desejamos que aproveite muito o seu Carnaval! Nós já estamos aqui preparando um pós Carnaval com ...',
-      4
-    ),
-    new Email(
-      'Estudar JavaScript',
-      'Seja para descansar ou cair na folia, desejamos que aproveite muito o seu Carnaval! Nós já estamos aqui preparando um pós Carnaval com ...',
-      5
-    ),
-    new Email(
-      'Estudar JavaScript',
-      'Seja para descansar ou cair na folia, desejamos que aproveite muito o seu Carnaval! Nós já estamos aqui preparando um pós Carnaval com ...',
-      6
-    )
-  ],
+  initialState: emailInicial,
   reducers: {
+    //função para remover um email
     remover: (state, action: PayloadAction<number>) => {
-      state = state.filter((email) => email.id !== action.payload)
+      state.itens = state.itens.filter((email) => email.id !== action.payload)
     }
   }
 })
