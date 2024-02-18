@@ -63,12 +63,12 @@ export const BotaoFechar = styled(Link)`
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 `
 
-export const Destino = styled.form`
+export const Formulario = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;
 `
-export const Inputs = styled.input`
+export const Span = styled.span`
   height: 50px;
   padding-left: 10px;
   outline: none;
