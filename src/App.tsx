@@ -8,6 +8,7 @@ import store from './store'
 
 import Home from './pages/Home'
 import NovoEmail from './pages/NovoEmail'
+import VerEmail from './pages/VerEmail'
 
 const rotas = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const rotas = createBrowserRouter([
   {
     path: '/NovoEmail',
     element: <NovoEmail />
+  },
+  {
+    path: '/VerEmail',
+    element: <VerEmail />
   }
 ])
 
