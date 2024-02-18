@@ -35,6 +35,6 @@ export const ConteudoPrincipal = styled.main`
 `
 
 export const Linha = styled.div`
-  background-color: #ccc;
+  background-color: #c0c0c0;
   height: 1px;
 `

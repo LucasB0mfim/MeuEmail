@@ -17,5 +17,5 @@ export const BotaoEscrever = styled(Link)`
   cursor: pointer;
   border: none;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 `

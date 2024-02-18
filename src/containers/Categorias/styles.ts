@@ -3,10 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 `
 
 export const BarraDePesquisa = styled.input`
+  position: absolute;
+  right: 8%;
   width: 300px;
   height: 30px;
   padding-left: 5px;

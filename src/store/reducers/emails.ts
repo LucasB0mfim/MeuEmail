@@ -43,6 +43,13 @@ const initialState: EmailState = {
       descricao:
         'A sua tarefa foi conluída - Veja qual foi a sua nota na avaliação EBAC...',
       categoria: enums.Categoria.SOCIAL
+    },
+    {
+      id: 6,
+      titulo: 'Amazon',
+      descricao:
+        'Promoção na sua lista de desejos - Compre um ps5 em 12x parcelas de R$200,00...',
+      categoria: enums.Categoria.PROMOCAO
     }
   ]
 }
@@ -53,9 +60,12 @@ const emailSlice = createSlice({
   reducers: {
     removerEmail: (state, action: PayloadAction<number>) => {
       state.itens = state.itens.filter((email) => email.id !== action.payload)
+    },
+    enviar: (state, action: PayloadAction<ModeloDeEmail>) => {
+      state.itens.push(action.payload)
     }
   }
 })
 
-export const { removerEmail } = emailSlice.actions
+export const { removerEmail, enviar } = emailSlice.actions
 export default emailSlice.reducer

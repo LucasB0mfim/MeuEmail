@@ -7,12 +7,12 @@ type Props = {
 export const Categorias = styled.div<Props>`
   width: 200px;
   padding: 20px;
-  margin: 0 25px 0 10px;
+  margin-left: 10px;
   cursor: pointer;
   transition: all linear 0.1s;
-  color: ${(props) => (props.ativo ? '#1e90ff' : '#5e5e5e')};
+  color: ${(props) => (props.ativo ? '#0081ff' : '#5e5e5e')};
   border-bottom: ${(props) =>
-    props.ativo ? '2px solid #1e90ff' : '2px solid transparent'};
+    props.ativo ? '2px solid #0081ff' : '2px solid transparent'};
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.3);
