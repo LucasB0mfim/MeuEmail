@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const BarraLateral = styled.aside`
   display: flex;
@@ -7,7 +8,10 @@ export const BarraLateral = styled.aside`
   width: 5%;
 `
 
-export const BotaoEscrever = styled.button`
+export const BotaoEscrever = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   cursor: pointer;

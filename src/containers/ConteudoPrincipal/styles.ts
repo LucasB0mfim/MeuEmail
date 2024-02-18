@@ -1,15 +1,40 @@
 import styled from 'styled-components'
 
-export const ConteudoPrincipal = styled.main`
-  width: 98%;
-  height: 90vh;
-  background-color: #fff;
-  border-radius: 10px;
-`
-
 export const AlinhadorDaMain = styled.div`
   width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
+`
+
+export const ConteudoPrincipal = styled.main`
+  width: 98%;
+  height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  /* Largura da barra de rolagem */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Cor do controle da barra de rolagem */
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+
+  /* Cor do fundo da barra de rolagem */
+  &::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+`
+
+export const Linha = styled.div`
+  background-color: #ccc;
+  height: 1px;
 `
