@@ -17,7 +17,7 @@ const Email = ({ titulo, descricao, categoria, id }: Props) => {
   const dispatch = useDispatch()
 
   return (
-    <S.Email>
+    <S.Email onClick={(evento) => console.log(evento.target)}>
       <S.Titulo>{titulo}</S.Titulo>
       <S.Descricao>{descricao}</S.Descricao>
       <div>{categoria}</div>
