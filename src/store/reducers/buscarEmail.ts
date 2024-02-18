@@ -1,5 +1,3 @@
-//filtro
-
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import * as enums from '../../utils/enums/EnumsCategoria'
 

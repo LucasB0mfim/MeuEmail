@@ -1,5 +1,3 @@
-//tarefas
-
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import ModeloDeEmail from '../../models/ModeloDeEmail'
 import * as enums from '../../utils/enums/EnumsCategoria'

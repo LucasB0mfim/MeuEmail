@@ -60,6 +60,7 @@ const EnviandoEmail = () => {
             {/*  //  */}
             {/*  //  */}
           </S.Opcoes>
+
           <S.Inputs
             value={titulo}
             onChange={(evento) => setTitulo(evento.target.value)}
