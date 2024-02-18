@@ -15,6 +15,7 @@ export const ConteudoPrincipal = styled.main`
   width: 90%;
   height: 90vh;
   overflow-y: auto;
+  overflow-x: hidden;
   border-radius: 10px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.8);
@@ -104,9 +105,42 @@ export const BotaoEnviar = styled.button`
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 `
 
-export const Opcoes = styled.div``
+export const Opcoes = styled.div`
+  display: flex;
+  position: relative;
+  top: -30%;
+  right: -65%;
+  width: 280px;
+`
 
 export const Opcao = styled.div`
-  display: inline;
   text-transform: capitalize;
+  margin-left: 20px;
+  font-size: 14px;
+
+  input[type='radio'] {
+    display: none;
+  }
+
+  /* Marcador */
+  input[type='radio'] + label:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10%;
+    margin-right: 5px;
+  }
+
+  /* Input (radio) quando está marcado */
+  input[type='radio']:checked + label:before {
+    background-color: rgba(0, 129, 255, 0.8);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Rótulo */
+  label {
+    font-size: 14px;
+    cursor: pointer;
+  }
 `

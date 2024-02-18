@@ -1,4 +1,5 @@
 //Formulario
+
 import { FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -19,7 +20,7 @@ const EnviandoEmail = () => {
   const enviarEmail = (evento: FormEvent) => {
     evento.preventDefault()
     const emailParaAdicionar = new ModeloDeEmail(
-      titulo,
+      `Enviado para: ${titulo}`,
       descricao,
       categoria,
       9

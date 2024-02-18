@@ -48,7 +48,6 @@ const ConteudoPrincipal = () => {
         <ul>
           {filtrarEmail().map((e) => (
             <li key={e.titulo}>
-              {/* tirar depois  */}
               <Email
                 titulo={e.titulo}
                 descricao={e.descricao}
