@@ -23,17 +23,15 @@ const Email = ({ titulo, descricao, id }: Props) => {
   }
 
   return (
-    <Link to={`/VerEmail/${id}`} style={{ color: '#000' }}>
-      <S.Email>
+    <S.Email>
+      <S.Clicar to={`/VerEmail/${id}`}>
         <S.Titulo>{titulo}</S.Titulo>
         <S.Descricao>{descricao}</S.Descricao>
-        <S.Lixeira>
-          <S.Lixeira onClick={(event) => RemoverEmailClick(event)}>
-            <img src={lixeira} style={{ width: '15px' }} alt="Remover" />
-          </S.Lixeira>
-        </S.Lixeira>
-      </S.Email>
-    </Link>
+      </S.Clicar>
+      <S.Lixeira onClick={(event) => RemoverEmailClick(event)}>
+        <img src={lixeira} style={{ width: '15px' }} alt="Remover" />
+      </S.Lixeira>
+    </S.Email>
   )
 }
 

@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
 import { RootReducer } from '../../store'
+import { useParams } from 'react-router-dom'
 
 import * as S from './styles'
 
@@ -16,19 +16,14 @@ const VerEmail = () => {
   }
 
   return (
-    // <div>
-    //   <h2>{email.titulo}</h2>
-    //   <p>{email.descricao}</p>
-    //   <p>{email.categoria}</p>
-    // </div>
     <S.AlinhadorDaMain>
       <S.ConteudoPrincipal>
         <S.Cabecalho>
           <S.BotaoFechar to="/">x</S.BotaoFechar>
         </S.Cabecalho>
         <S.Formulario>
-          <S.Span>{email.titulo}</S.Span>
-          <S.Span>{email.descricao}</S.Span>
+          <S.Span>{`Para: ${email.titulo}`}</S.Span>
+          <S.Span>{`Descrição: ${email.descricao}`}</S.Span>
         </S.Formulario>
         <S.Mensagem value={email.texto} disabled={true} />
       </S.ConteudoPrincipal>

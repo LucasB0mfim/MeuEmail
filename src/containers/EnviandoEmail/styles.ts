@@ -65,6 +65,10 @@ export const BotaoFechar = styled(Link)`
   border: 1px solid transparent;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    color: #000;
+  }
 `
 
 export const Destino = styled.form`

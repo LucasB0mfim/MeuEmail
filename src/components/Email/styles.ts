@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const Lixeira = styled.button`
-  width: 5%;
   height: 20px;
+  width: 10%;
+  height: 39px;
   cursor: pointer;
   border: none;
   background-color: transparent;
-  visibility: hidden;
+  // visibility: hidden;
 `
 
 export const Email = styled.div`
@@ -29,14 +31,29 @@ export const Email = styled.div`
   }
 `
 
+export const Clicar = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 39px;
+  color: #000;
+`
+
 export const Titulo = styled.h3`
+  display: flex;
+  align-items: center;
   width: 15%;
+  height: 39px;
   font-size: 14px;
   font-weight: normal;
 `
 
 export const Descricao = styled.span`
+  display: flex;
+  align-items: center;
   width: 80%;
+  height: 39px;
   color: #8b8b8b;
   font-size: 14px;
   overflow: hidden;

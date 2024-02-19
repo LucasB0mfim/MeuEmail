@@ -62,6 +62,10 @@ export const BotaoFechar = styled(Link)`
   border: 1px solid transparent;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    color: #000;
+  }
 `
 
 export const Formulario = styled.form`
@@ -75,7 +79,7 @@ export const Span = styled.span`
   height: 50px;
   padding-left: 10px;
   font-size: 14px;
-  color: #818181;
+  color: #676767;
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
@@ -84,7 +88,7 @@ export const Span = styled.span`
 
 export const Mensagem = styled.textarea`
   font-size: 14px;
-  color: #818181;
+  color: #595959;
   resize: none;
   border: none;
   outline: none;
