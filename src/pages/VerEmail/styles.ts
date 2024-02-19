@@ -69,6 +69,8 @@ export const Formulario = styled.form`
   width: 100%;
 `
 export const Span = styled.span`
+  display: flex;
+  align-items: center;
   height: 50px;
   padding-left: 10px;
   outline: none;

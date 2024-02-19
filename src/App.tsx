@@ -20,7 +20,7 @@ const rotas = createBrowserRouter([
     element: <NovoEmail />
   },
   {
-    path: '/VerEmail',
+    path: '/VerEmail/:id',
     element: <VerEmail />
   }
 ])

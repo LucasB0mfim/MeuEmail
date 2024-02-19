@@ -41,11 +41,6 @@ const ConteudoPrincipal = () => {
         <Categorias />
         <S.Linha />
         <ul>
-          <li>{termo}</li>
-          <li>{criterio}</li>
-          <li>{valor}</li>
-        </ul>
-        <ul>
           {filtrarEmail().map((e) => (
             <li key={e.titulo}>
               <Email

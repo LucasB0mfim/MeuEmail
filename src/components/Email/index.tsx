@@ -1,4 +1,4 @@
-//Tarefa
+import { Link } from 'react-router-dom'
 
 import { useDispatch } from 'react-redux'
 
@@ -12,19 +12,28 @@ import ModeloDeEmail from '../../models/ModeloDeEmail'
 
 type Props = ModeloDeEmail
 
-const Email = ({ titulo, descricao, categoria, id }: Props) => {
-  //remover email
+const Email = ({ titulo, descricao, id }: Props) => {
   const dispatch = useDispatch()
 
+  const RemoverEmailClick = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    event.stopPropagation() // Impede a propagação do evento de clique
+    dispatch(removerEmail(id)) // Remove o e-mail da store
+  }
+
   return (
-    <S.Email onClick={(evento) => console.log(evento.target)}>
-      <S.Titulo>{titulo}</S.Titulo>
-      <S.Descricao>{descricao}</S.Descricao>
-      <div>{categoria}</div>
-      <S.Lixeira onClick={() => dispatch(removerEmail(id))}>
-        <img src={lixeira} style={{ width: '15px' }} />
-      </S.Lixeira>
-    </S.Email>
+    <Link to={`/VerEmail/${id}`} style={{ color: '#000' }}>
+      <S.Email>
+        <S.Titulo>{titulo}</S.Titulo>
+        <S.Descricao>{descricao}</S.Descricao>
+        <S.Lixeira>
+          <S.Lixeira onClick={(event) => RemoverEmailClick(event)}>
+            <img src={lixeira} style={{ width: '15px' }} alt="Remover" />
+          </S.Lixeira>
+        </S.Lixeira>
+      </S.Email>
+    </Link>
   )
 }
 
