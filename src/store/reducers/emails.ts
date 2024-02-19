@@ -11,8 +11,8 @@ const initialState: EmailState = {
     {
       id: 1,
       titulo: 'Ebac',
-      descricao: 'Estude TypeScript - Entre agora na lista de atividas...',
-      texto: 'Estude TypeScript - Entre agora na lista de atividas...',
+      descricao: 'Estude TypeScript - Entre agora na lista de atividades...',
+      texto: 'Estude TypeScript - Entre agora na lista de atividades...',
       categoria: enums.Categoria.PRINCIPAL
     },
     {
