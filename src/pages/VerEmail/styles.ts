@@ -43,6 +43,7 @@ export const Cabecalho = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  height: 80px;
   width: 100%;
 `
 
@@ -73,6 +74,8 @@ export const Span = styled.span`
   align-items: center;
   height: 50px;
   padding-left: 10px;
+  font-size: 14px;
+  color: #818181;
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
@@ -80,6 +83,8 @@ export const Span = styled.span`
 `
 
 export const Mensagem = styled.textarea`
+  font-size: 14px;
+  color: #818181;
   resize: none;
   border: none;
   outline: none;

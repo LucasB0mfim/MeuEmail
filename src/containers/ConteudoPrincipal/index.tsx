@@ -46,6 +46,7 @@ const ConteudoPrincipal = () => {
               <Email
                 titulo={e.titulo}
                 descricao={e.descricao}
+                texto={e.texto}
                 categoria={e.categoria}
                 id={e.id}
               />

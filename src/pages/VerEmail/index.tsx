@@ -30,7 +30,7 @@ const VerEmail = () => {
           <S.Span>{email.titulo}</S.Span>
           <S.Span>{email.descricao}</S.Span>
         </S.Formulario>
-        <S.Mensagem disabled={true} />
+        <S.Mensagem value={email.texto} disabled={true} />
       </S.ConteudoPrincipal>
     </S.AlinhadorDaMain>
   )

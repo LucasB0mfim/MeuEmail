@@ -15,6 +15,7 @@ const EnviandoEmail = () => {
   const navigate = useNavigate()
   const [titulo, setTitulo] = useState('')
   const [descricao, setDescricao] = useState('')
+  const [texto, setTexto] = useState('')
   const [categoria, setCategoria] = useState(enums.Categoria.PRINCIPAL)
 
   const enviarEmail = (evento: FormEvent) => {
@@ -22,6 +23,7 @@ const EnviandoEmail = () => {
     const emailParaAdicionar = new ModeloDeEmail(
       `Enviado para: ${titulo}`,
       descricao,
+      texto,
       categoria,
       9
     )
@@ -77,7 +79,10 @@ const EnviandoEmail = () => {
           />
           <S.BotaoEnviar type="submit">enviar</S.BotaoEnviar>
         </S.Destino>
-        <S.Mensagem />
+        <S.Mensagem
+          value={texto}
+          onChange={(evento) => setTexto(evento.target.value)}
+        />
       </S.ConteudoPrincipal>
     </S.AlinhadorDaMain>
   )
