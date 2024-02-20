@@ -19,6 +19,10 @@ export const Categorias = styled.div<Props>`
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `
 
 export const Label = styled.span`

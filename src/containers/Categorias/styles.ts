@@ -7,6 +7,8 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
   }
 `
 
@@ -24,5 +26,6 @@ export const BarraDePesquisa = styled.input`
 
   @media (max-width: 768px) {
     top: 6.5%;
+    right: 10%;
   }
 `
