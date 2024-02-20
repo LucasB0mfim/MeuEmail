@@ -25,7 +25,7 @@ export const BarraDePesquisa = styled.input`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
   @media (max-width: 768px) {
-    top: 6.5%;
-    right: 10%;
+    top: 11.5%;
+    right: 12%;
   }
 `

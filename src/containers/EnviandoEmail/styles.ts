@@ -44,6 +44,7 @@ export const ConteudoPrincipal = styled.main`
 
   @media (max-width: 768px) {
     width: 95%;
+    height: 80vh;
   }
 `
 export const Cabecalho = styled.div`
@@ -115,6 +116,11 @@ export const BotaoEnviar = styled.button`
   color: #fff;
   background-color: rgba(0, 129, 255, 0.8);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 768px) {
+    bottom: 13%;
+    right: 8%;
+  }
 `
 
 export const Opcoes = styled.div`

@@ -44,6 +44,7 @@ export const ConteudoPrincipal = styled.main`
 
   @media (max-width: 768px) {
     width: 95%;
+    height: 80vh;
   }
 `
 export const Cabecalho = styled.div`
