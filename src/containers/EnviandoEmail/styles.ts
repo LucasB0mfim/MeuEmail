@@ -118,7 +118,7 @@ export const BotaoEnviar = styled.button`
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
-    bottom: 13%;
+    bottom: 10%;
     right: 8%;
   }
 `
