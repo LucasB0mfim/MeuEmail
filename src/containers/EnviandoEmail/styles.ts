@@ -119,7 +119,7 @@ export const BotaoEnviar = styled.button`
 
   @media (max-width: 768px) {
     bottom: 6%;
-    right: 8%;
+    right: 7%;
   }
 `
 
