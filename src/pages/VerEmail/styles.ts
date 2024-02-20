@@ -6,6 +6,10 @@ export const AlinhadorDaMain = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 export const ConteudoPrincipal = styled.main`
@@ -36,6 +40,10 @@ export const ConteudoPrincipal = styled.main`
     background-color: #ccc;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 95%;
   }
 `
 export const Cabecalho = styled.div`
@@ -84,6 +92,10 @@ export const Span = styled.span`
   border: none;
   border-bottom: 2px solid #ccc;
   background-color: rgba(255, 255, 255, 0.5);
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `
 
 export const Mensagem = styled.textarea`
@@ -96,4 +108,8 @@ export const Mensagem = styled.textarea`
   height: 100%;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.5);
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `

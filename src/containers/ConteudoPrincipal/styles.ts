@@ -5,6 +5,10 @@ export const AlinhadorDaMain = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 export const ConteudoPrincipal = styled.main`
@@ -31,6 +35,10 @@ export const ConteudoPrincipal = styled.main`
     background-color: #ccc;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 95%;
   }
 `
 

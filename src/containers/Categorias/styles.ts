@@ -4,6 +4,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 `
 
 export const BarraDePesquisa = styled.input`
@@ -17,4 +21,8 @@ export const BarraDePesquisa = styled.input`
   border: 2px solid transparent;
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 768px) {
+    top: 6.5%;
+  }
 `

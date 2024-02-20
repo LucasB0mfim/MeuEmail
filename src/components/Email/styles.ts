@@ -8,7 +8,12 @@ export const Lixeira = styled.button`
   cursor: pointer;
   border: none;
   background-color: transparent;
-  // visibility: hidden;
+  visibility: hidden;
+
+  @media (max-width: 768px) {
+    width: 5%;
+    visibility: visible;
+  }
 `
 
 export const Email = styled.div`
@@ -29,6 +34,11 @@ export const Email = styled.div`
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0px 10px;
+  }
 `
 
 export const Clicar = styled(Link)`
@@ -38,6 +48,10 @@ export const Clicar = styled(Link)`
   width: 90%;
   height: 39px;
   color: #000;
+
+  @media (max-width: 768px) {
+    max-width: 95%;
+  }
 `
 
 export const Titulo = styled.h3`
@@ -47,6 +61,11 @@ export const Titulo = styled.h3`
   height: 39px;
   font-size: 14px;
   font-weight: normal;
+
+  @media (max-width: 768px) {
+    width: 20%;
+    font-size: 12px;
+  }
 `
 
 export const Descricao = styled.span`
@@ -59,4 +78,9 @@ export const Descricao = styled.span`
   overflow: hidden;
   white-space: nowrap; /* Para o texto ficar em uma única linha */
   text-overflow: ellipsis; /* Adiciona '...' quando o texto ultrapassa a largura */
+
+  @media (max-width: 768px) {
+    width: 75%;
+    font-size: 12px;
+  }
 `

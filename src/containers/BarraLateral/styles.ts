@@ -5,7 +5,7 @@ export const BarraLateral = styled.aside`
   display: flex;
   justify-content: right;
   height: 90vh;
-  width: 5%;
+  width: 0%;
 `
 
 export const BotaoEscrever = styled(Link)`
@@ -18,4 +18,10 @@ export const BotaoEscrever = styled(Link)`
   border: none;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
+
+  @media (max-width: 768px) {
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+  }
 `
