@@ -26,6 +26,6 @@ export const BotaoEscrever = styled(Link)`
   @media (max-width: 768px) {
     position: absolute;
     right: 5%;
-    bottom: 10%;
+    bottom: 8%;
   }
 `
