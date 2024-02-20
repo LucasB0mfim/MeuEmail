@@ -3,9 +3,13 @@ import { Link } from 'react-router-dom'
 
 export const BarraLateral = styled.aside`
   display: flex;
-  justify-content: right;
+  justify-content: center;
   height: 90vh;
-  width: 0%;
+  width: 5%;
+
+  @media (max-width: 768px) {
+    width: 0%;
+  }
 `
 
 export const BotaoEscrever = styled(Link)`
